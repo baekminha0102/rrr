@@ -1,0 +1,123 @@
+/* 기본 스타일 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.5s ease-in-out;
+  }
+  
+  .weather-app {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    color: #444;
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 12px 20px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #4a90e2;
+  }
+  
+  button {
+    padding: 12px 20px;
+    margin-left: 10px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #357ab8;
+  }
+  
+  /* 날씨 결과 */
+  .weather-result {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .weather-icon {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+  }
+  
+  .hourly-forecast {
+    display: flex;
+    overflow-x: auto;
+    margin-top: 20px;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .hour-card {
+    min-width: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .hour-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .hour-card img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .hour-card p {
+    margin-top: 8px;
+    color: #555;
+  }
+  
+  
